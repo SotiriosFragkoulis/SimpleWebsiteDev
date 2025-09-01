@@ -1,0 +1,122 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif; /* Default font */
+    color: #333; /* Dark grey text color */
+    display: grid; /* Use grid for the body */
+    grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Generic Grid Layout Class */
+.grid {
+    display: grid; /* Use grid layout */
+    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Use minmax for responsive columns */
+}
+
+/* Media Queries for responsive grid */
+@media (max-width: 899px) {
+    .grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+}
+
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
+    }
+}
+
+/* Unfortunately, I couldn't implement the responsive images. I got lost. */
+
+.title {
+    grid-column: 1 / -1; /* This makes it span all columns */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Header styles */
+.header {
+    background-color: #6c74a8; /* Header background color */
+    color: white; /* White text */
+    padding: 20px; /* Padding around the header */
+    text-align: left; /* Left aligned text */
+    display: grid; /* Use grid for header layout */
+    grid-template-columns: auto 1fr auto; /* Logo, title, nav */
+    align-items: center; /* Center items vertically */
+}
+
+/* Navigation styles */
+.nav-list {
+    display: flex; /* Use Flexbox for navigation items */
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.nav-list li {
+    margin-right: 20px; /* Space between navigation items */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 10px; /* Padding around the footer */
+}
+
+/* Article and section styles */
+article, section {
+    background-color: white; /* White background for articles */
+    padding: 15px; /* Padding inside articles */
+    margin: 10px; /* Space between articles */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Link styles */
+a {
+    color: #3498DB; /* Blue links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.img-small {
+    width: 150px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.img-medium {
+    width: 300px; /* Medium size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.embedded-video {
+    display: block; /* Make the iframe a block element */
+    margin: 20px 0; /* Add space around the embedded video */
+}
+
+a:visited {
+    color: purple; /* Color for visited links */
+}
+
+a:active {
+    color: red; /* Color for active links */
+}
+
+.logo {
+    display: block; /* Makes the img a block-level element */
+    width: 1450px; /* Sets the width to 100% of its container */
+    height: 450px; /* Maintains the aspect ratio */
+}

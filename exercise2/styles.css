@@ -1,0 +1,70 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif; /* Default font */
+    color: #333; /* Dark grey text color */
+}
+
+/* Header styles */
+header {
+    background-color: #6c74a8; /* Header background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around the header */
+    text-align: left; /* left aligned text */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 10px; /* Padding around the footer */
+}
+
+/* Article and section styles */
+article, section {
+    background-color: white; /* White background for articles */
+    padding: 15px; /* Padding inside articles */
+    margin: 10px; /* Space between articles */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Link styles */
+a {
+    color: #3498DB; /* Blue links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.img-small {
+    width: 150px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.img-medium {
+    width: 300px; /* Medium size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.embedded-video {
+    display: block; /* Make the iframe a block element to be on top of Return to table of contents */
+}
+
+a:visited {
+    color: purple; /* Color for visited links */
+}
+
+a:active {
+    color: red; /* Color for active links */
+}
+
+.logo {
+    display: block; /* Makes the img a block-level element */
+    width: 1450px; /* Sets the width to 100% of its container */
+    height: 450px; /* Maintains the aspect ratio */
+}
